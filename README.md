@@ -5,9 +5,6 @@ An ubuntu-based dockerfile with emscripten sdk and QT5 open-source preconfigured
 
 ## How to use this dockerfile to build a QT5 app with emscripten
 
-    git clone https://github.com/yoisel/docker_qtwasm.git
-    cd docker_qtwasm
-
 Note that:
 
 1- This docker build command will install qt5 from sources, so it will take a few *hours*
@@ -16,6 +13,8 @@ Note that:
 you are confirming the license terms (see ../qt5/configure -opensource -confirm-license
 inside the dockerfile)
 
+    git clone https://github.com/yoisel/docker_qtwasm.git
+    cd docker_qtwasm
     docker build -t qasm-dev-env-img .
     cd /path/to/my/qt/source/code
     docker run --rm -v ${PWD}:/src --name qasm-dev-env -it qasm-dev-env-img
