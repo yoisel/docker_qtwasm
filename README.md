@@ -19,7 +19,7 @@ inside the dockerfile)
     cd /path/to/my/qt/source/code
     docker run --rm -v ${PWD}:/src --name qasm-dev-env -it qasm-dev-env-img
 
-Now we are inside a docker container with a folder /qtasm that contains qt5 pre-built for wasm
+Now we are inside a docker container with a folder /qt-wasm that contains qt5 pre-built for wasm
 
 If you have a .pro (example myproject.pro) file under /src you can do:
 
