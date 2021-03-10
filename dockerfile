@@ -45,8 +45,8 @@ RUN cd /emsdk && \. ./emsdk_env.sh && cd /qt5-wasm && \
 
 # Activate qasm environment variables in the terminal
 RUN echo 'export CMAKE_PREFIX_PATH="/qt5-wasm/qtbase/lib/cmake"' >> ~/.bashrc
-RUN echo 'Qt5_DIR="/qt5-wasm/qtbase/lib/cmake/Qt5/"' >> ~/.bashrc
-RUN echo 'QMAKE_EXECUTABLE="/src/dev_env/qt5-wasm/qtbase/bin/qmake"' >> ~/.bashrc
-RUN echo 'Qt5Core_DIR="/src/dev_env/qt5-wasm/qtbase/lib/cmake/Qt5Core"' >> ~/.bashrc
+RUN echo 'export Qt5_DIR="/qt5-wasm/qtbase/lib/cmake/Qt5/"' >> ~/.bashrc
+RUN echo 'export QMAKE_EXECUTABLE="/src/dev_env/qt5-wasm/qtbase/bin/qmake"' >> ~/.bashrc
+RUN echo 'export Qt5Core_DIR="/src/dev_env/qt5-wasm/qtbase/lib/cmake/Qt5Core"' >> ~/.bashrc
 
 ENTRYPOINT ["/bin/bash"]
