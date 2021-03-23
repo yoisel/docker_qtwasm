@@ -25,4 +25,4 @@ If you have a .pro (example myproject.pro) file under /src you can do:
 
     cd /src
     /qt-wasm/qtbase/bin/qmake myproject.pro
-    make
+    emmake make
